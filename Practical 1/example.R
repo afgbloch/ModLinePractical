@@ -14,7 +14,7 @@ plot(fitted(fit),rstandard(fit))
 plot(fitted(fit),rstandard(fit))
 identity(fitted(fit), rstandard(fit), labels...)
 qqnorm(rstandard(fit))
-qqline(rstandard()fit)
+qqline(rstandard(fit))
 plot(cooks.distance(fit))
 p <- dim(model.matrix(fit))[2]
 n <- dim(model.matrix(fit))[1]
