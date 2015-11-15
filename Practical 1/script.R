@@ -38,11 +38,11 @@ fit = lm(y ~ x1 + x2, cars)
 n <- dim(model.matrix(fit))[1]
 p <- 3
 
-xtable(summary(fit))
+xtable(summary(fit), auto = TRUE)
 summary(fit)
 
 confint(fit)
-xtable(confint(fit))
+xtable(confint(fit), auto = TRUE)
 
 # Assumption validity check
 
@@ -90,16 +90,16 @@ carsC = carsC[-37,]
 yC = 100 / carsC$CityMPG
 x1C = carsC$Weight
 x2C = carsC$Horsepower/carsC$Weight
+
+fitC = lm(yC ~ x1C + x2C, carsC)
 nC <- dim(model.matrix(fitC))[1]
 pC <- 3
 
-fitC = lm(yC ~ x1C + x2C, carsC)
-
-xtable(summary(fitC))
+xtable(summary(fitC), auto = TRUE)
 summary(fitC)
 
 confint(fitC)
-xtable(confint(fitC))
+xtable(confint(fitC), auto = TRUE)
 
 # Assumption validity check
 
