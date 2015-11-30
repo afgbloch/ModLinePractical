@@ -14,7 +14,124 @@ n = dim(cars)[1]
 #          The data 
 #------------------------------
 
-#TODO ??
+# Boxplots
+pdf("boxplots-y.pdf")
+boxplot(y, main = "Fuel efficiency", ylab = "Gallons per a hundred city miles")
+dev.off()
+
+pdf("boxplots-11.pdf")
+boxplot(cars$Cylinders, main = "Cylinders", ylab = "number of cylinders")
+dev.off()
+
+pdf("boxplots-12.pdf")
+boxplot(cars$Engine, main = "Engine size", ylab = "liters")
+dev.off()
+
+pdf("boxplots-13.pdf")
+boxplot(cars$Horsepower, main = "Hoursepower", ylab = "max horsepower")
+dev.off()
+
+pdf("boxplots-14.pdf")
+boxplot(cars$RPM, main = "RPM", ylab = "number of revolutions per minute")
+dev.off()
+
+pdf("boxplots-15.pdf")
+boxplot(cars$RevMile, main = "RevMile", ylab = "revolutions per mile")
+dev.off()
+
+pdf("boxplots-17.pdf")
+boxplot(cars$FuelCapacity, main = "FuelCapacity", ylab = "gallons")
+dev.off()
+
+pdf("boxplots-18.pdf")
+boxplot(cars$Passengers, main = "Passengers", ylab = "number of personnes")
+dev.off()
+
+pdf("boxplots-19.pdf")
+boxplot(cars$Length, main = "Length", ylab = "inches")
+dev.off()
+
+pdf("boxplots-20.pdf")
+boxplot(cars$Wheelbase, main = "Wheelbase", ylab = "inches")
+dev.off()
+
+pdf("boxplots-21.pdf")
+boxplot(cars$Width, main = "Width", ylab = "inches")
+dev.off()
+
+pdf("boxplots-22.pdf")
+boxplot(cars$Uturn, main = "Uturn", ylab = "feet")
+dev.off()
+
+pdf("boxplots-23.pdf")
+boxplot(cars$RearSeat, main = "RearSeat", ylab = "inches")
+dev.off()
+
+pdf("boxplots-24.pdf")
+boxplot(cars$Luggage, main = "Luggage", ylab = "cube feet")
+dev.off()
+
+pdf("boxplots-25.pdf")
+boxplot(cars$Weight, main = "Weight", ylab = "pounds")
+dev.off()
+
+
+# Scatter plots
+pdf("scatter-plot-11.pdf")
+scatterplot(y ~ cars$Cylinders, main = "", ylab = "Gallons per a hundred city miles", xlab = "number of cylinders")
+dev.off()
+
+pdf("scatter-plot-12.pdf")
+scatterplot(y ~ cars$Engine, main = "", ylab = "Gallons per a hundred city miles", xlab = "liters")
+dev.off()
+
+pdf("scatter-plot-13.pdf")
+scatterplot(y ~ cars$Horsepower, main = "", ylab = "Gallons per a hundred city miles", xlab = "max horsepower")
+dev.off()
+
+pdf("scatter-plot-14.pdf")
+scatterplot(y ~ cars$RPM, main = "", ylab = "Gallons per a hundred city miles", xlab = "number of revolutions per minute")
+dev.off()
+
+pdf("scatter-plot-15.pdf")
+scatterplot(y ~ cars$RevMile, main = "", ylab = "Gallons per a hundred city miles", xlab = "revolutions per mile")
+dev.off()
+
+pdf("scatter-plot-17.pdf")
+scatterplot(y ~ cars$FuelCapacity, main = "", ylab = "Gallons per a hundred city miles", xlab = "gallons")
+dev.off()
+
+pdf("scatter-plot-18.pdf")
+scatterplot(y ~ cars$Passengers, main = "", ylab = "Gallons per a hundred city miles", xlab = "number of personnes")
+dev.off()
+
+pdf("scatter-plot-19.pdf")
+scatterplot(y ~ cars$Length, main = "", ylab = "Gallons per a hundred city miles", xlab = "inches")
+dev.off()
+
+pdf("scatter-plot-20.pdf")
+scatterplot(y ~ cars$Wheelbase, main = "", ylab = "Gallons per a hundred city miles", xlab = "inches")
+dev.off()
+
+pdf("scatter-plot-21.pdf")
+scatterplot(y ~ cars$Width, main = "", ylab = "Gallons per a hundred city miles", xlab = "inches")
+dev.off()
+
+pdf("scatter-plot-22.pdf")
+scatterplot(y ~ cars$Uturn, main = "", ylab = "Gallons per a hundred city miles", xlab = "feet")
+dev.off()
+
+pdf("scatter-plot-23.pdf")
+scatterplot(y ~ cars$RearSeat, main = "", ylab = "Gallons per a hundred city miles", xlab = "inches")
+dev.off()
+
+pdf("scatter-plot-24.pdf")
+scatterplot(y ~ cars$Luggage, main = "", ylab = "Gallons per a hundred city miles", xlab = "cube feet")
+dev.off()
+
+pdf("scatter-plot-25.pdf")
+scatterplot(y ~ cars$Weight, main = "", ylab = "Gallons per a hundred city miles", xlab = "pounds")
+dev.off()
 
 #------------------------------
 #          Analysis 1
